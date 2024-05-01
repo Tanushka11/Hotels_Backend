@@ -72,7 +72,8 @@ The `Person` data model represents information about staff members in the hotel.
     "address": "27017 local host",
     "salary": 300000
   }
-  ### Menu Item
+  
+ ### Menu
 The `MenuItem` data model represents information about menu items available in the hotel.
 
 - **Fields:**
