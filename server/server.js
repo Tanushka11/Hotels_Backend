@@ -6,7 +6,14 @@ const PORT = process.env.PORT || 3000
 
 const bodyParser = require('body-parser');
 
+const logRequest = (req,res,next)=>{
+    console.log(`[${new Date().toLocaleString()}] : request made to ${req.originalUrl}`)
+    next();
+}
+
 app.use(bodyParser.json()) 
+app.use(logRequest)
+
 const personRoutes = require("./routes/personRoutes");
 app.use("/person",personRoutes)
 
