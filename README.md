@@ -63,11 +63,39 @@ The `Person` data model represents information about staff members in the hotel.
 - **Example:**
   ```json
   {
-    "name": "John Doe",
-    "age": 30,
-    "work": "waiter",
+    "name": "dummy",
+    "age": 20,
+    "work": "Owner",
     "mobile": "123-456-7890",
-    "email": "john@example.com",
-    "address": "123 Main Street",
-    "salary": 30000
+    "email": "dummy@example.com",
+    "address": "27017 local host",
+    "salary": 300000
   }
+  ### Menu Item
+The `MenuItem` data model represents information about menu items available in the hotel.
+
+- **Fields:**
+  - `name`: String (Item's name)
+  - `price`: Number (Item's price)
+  - `taste`: Enum (Item's taste, such as sweet, spicy, sour)
+  - `is_drink`: Boolean (Indicates if the item is a drink, default is `false`)
+  - `ingredients`: Array of Strings (List of ingredients, default is an empty array)
+  - `num_sales`: Number (Number of sales for the item, default is `0`)
+
+- **Example:**
+  ```json
+  {
+    "name": "Aloo Paratha",
+    "price": 60,
+    "taste": "spicy",
+    "is_drink": false,
+    "ingredients": ["Potato", "spices"],
+    "num_sales": 50
+  }
+
+
+## Usage
+
+1. **Install Dependencies:**
+   ```bash
+   npm install
