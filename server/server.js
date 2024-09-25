@@ -24,7 +24,7 @@ app.get("/", (req,res)=>{
 })
 
 const personRoutes = require("./routes/personRoutes");
-app.use("/person",localAuthMiddileware,personRoutes)
+app.use("/person",personRoutes)
 
 
 const menuRoutes = require("./routes/menuRoutes")
